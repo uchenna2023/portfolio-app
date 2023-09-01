@@ -2,7 +2,6 @@
 
 import './App.css'
 import uchenna from './assets/uchenna.png'
-import rest from './assets/rest.png'
 import country from './assets/country.png'
 import logo2 from './assets/logo2.svg'
 import logo from './assets/logo.svg'
@@ -10,6 +9,9 @@ import circles2 from './assets/circles2.png'
 import linkedin from './assets/linkedin.svg'
 import git from './assets/git.svg'
 import Oval from './assets/Oval.svg'
+import todo from './assets/todo.png'
+import timer from './assets/timer.png'
+import paybox from './assets/paybox.png'
 
 
 function App() {
@@ -31,7 +33,7 @@ function App() {
         <section className='flex-col md:flex-row justify-center items-center relative pr-32 pl-32 hidden md:flex'>
           <article className='text-[#ffffff] flex-1 relative' >
             <h1 className='text-6xl font-bold pb-14'>Nice to meet you!<br /> I am <span className=' border-b-[#4EE1A0] border-b-[5px]'>Uchenna Jude.</span></h1>
-            <p className=' pb-20'>Based in Nigeria Am a frontend developer <br />love to develop website and web apps with great <br />value for accessibility</p>
+            <p className=' pb-20 md:text-[1.5rem] md:p-0 md:p-0 md:pb-6'>Based in Nigeria Am a frontend developer <br />love to develop website and web apps with great <br />value for accessibility.</p>
             <button className='text-2xl border-b-[#4EE1A0] border-b-[3px]'>CONTACT ME</button>
             <span className='absolute -right-16 -bottom-6'>
               <img src={Oval} className='' />
@@ -50,7 +52,7 @@ function App() {
           <article className='text-[#ffffff] flex-1 relative mt-5' >
             <div className='flex flex-col justify-center items-center'>
               <h1 className='text-4xl font-bold pb-14'>Nice to meet you!<br /> I am <span className=' border-b-[#4EE1A0] border-b-[5px]'>Uchenna Jude.</span></h1>
-              <p className=' pb-20'>Based in Nigeria Am a frontend developer <br />love to develop website and web apps with great <br />value for accessibility</p>
+              <p className=' border pb-20'>Based in Nigeria Am a frontend developer <br />love to develop website and web apps with great <br />value for accessibility</p>
               <button className='text-2xl border-b-[#4EE1A0] border-b-[3px]'>CONTACT ME</button>
               <span className='absolute -right-16 -bottom-6'>
                 <img src={Oval} className='w-5/12' />
@@ -60,29 +62,37 @@ function App() {
           </article>
 
         </section>
-        <section className='flex flex-col items-center md:grid grid-cols-3 gap-y-16  pt-10 mt-10 border-t-stone-300 border-t-2 mr-6 ml-6 md:mr-32 md:ml-32 md:border-b-stone-900 border-b-1 border-b-stone-300 border-b-2 pb-10'>
-          <article className='text-[#ffffff]'>
+        <section className='flex flex-col  items-center md:grid grid-cols-3 gap-y-16  pt-10 mt-10 border-t-stone-300 border-t-2 mr-6 ml-6 md:mr-32  md:ml-32 md:border-b-stone-900 border-b-1 border-b-stone-300 border-b-2 pb-10'>
+          <article className='text-[#ffffff] flex flex-col items-center'>
             <h2 className='text-3xl pb-3'>HTML</h2>
             <p>2 years experience</p>
           </article>
-          <article className='text-[#ffffff]'>
+          <article className='text-[#ffffff] flex flex-col items-center'>
             <h2 className='text-3xl pb-3'>CSS</h2>
             <p>2 years experience</p>
           </article>
-          <article className='text-[#ffffff]'>
-            <h2 className='text-3xl pb-3'>JAVASCRIPT</h2>
+          <article className='text-[#ffffff] flex flex-col items-center'>
+            <h2 className='text-3xl pb-3'>JavaScript</h2>
             <p>2 years experience</p>
           </article>
-          <article className='text-[#ffffff]'>
-            <h2 className='text-3xl pb-3'>Accessibility</h2>
+          <article className='text-[#ffffff] flex flex-col items-center'>
+            <h2 className='text-3xl pb-3'>React</h2>
             <p>2 years experience</p>
           </article>
-          <article className='text-[#ffffff]'>
+          <article className='text-[#ffffff] flex flex-col items-center'>
             <h2 className='text-3xl pb-3'>Taiwind</h2>
             <p>2 years experience</p>
           </article>
-          <article className='text-[#ffffff]'>
+          <article className='text-[#ffffff] flex flex-col items-center'>
             <h2 className='text-3xl pb-3'>Git</h2>
+            <p>2 years experience</p>
+          </article>
+          <article className='text-[#ffffff] flex flex-col items-center'>
+            <h2 className='text-3xl pb-3'>Problem Solving</h2>
+            <p>1 year experience</p>
+          </article>
+          <article className='text-[#ffffff] flex flex-col items-center'>
+            <h2 className='text-3xl pb-3'>Accessibility</h2>
             <p>2 years experience</p>
           </article>
         </section>
@@ -93,40 +103,72 @@ function App() {
             <button className='border-b-[#4EE1A0] border-b-[3px] text-2xl'>Contact Us</button>
           </div>
           <div className='flex flex-col md:grid grid-cols-2 gap-y-8 gap-x-20 md:w-full w-6/6'>
-            <div className='relative w-full'>
-              <div className='w-full h-[400px]'>
-                <img src={country} className='h-[400px] w-full object-cover' />
+            <div className='relative  w-full'>
+              <div className='w-full h-[18rem] sm:h-[25rem]'>
+                <img src={country} className='h-[25rem] w-full object-scale-down' />
               </div>
-              <div className='hidden md:absolute md:text-3xl md:text-white md:bg-[#000000] md:w-full md:h-[400px] md:top-0 md:left-0 md:flex md:flex-col md:justify-center md:items-center md:opacity-[0] md:hover:opacity-[.8] hover:cursor-pointer duration-500'>
-                <p className=' border-b-[#4EE1A0] border-b-[3px] mb-5 text-[1rem] hover:text-[#4EE1A0]'>VIEW PROJECT</p>
-                <p className='border-b-[#4EE1A0] border-b-[3px] text-[1rem] hover:text-[#4EE1A0]'>VIEW CODE</p>
+              <div className='hidden md:absolute md:text-3xl md:text-white md:bg-[#000000] md:w-full md:h-[25rem] md:top-0 md:left-0 md:flex md:flex-col md:justify-center md:items-center md:opacity-[0] md:hover:opacity-[.8] hover:cursor-pointer duration-500'>
+                <p className=' border-b-[#4EE1A0] border-b-[3px] mb-5 text-[1rem] hover:text-[#4EE1A0]'><a href='https://countries-api-app.pages.dev/' target='_blank'>VIEW PROJECT</a></p>
+                <p className='border-b-[#4EE1A0] border-b-[3px] text-[1rem] hover:text-[#4EE1A0]'><a href='https://github.com/uchenna2023/countries_api_app' target='_blank'>VIEW CODE</a></p>
               </div>
               <div className='text-white'>
-                <h3 className='mt-5 text-2xl'>DESIGN WEBSITE</h3>
-                <h4 className='mt-5'>HTML CSS</h4>
+                <h3 className='mt-5 text-2xl'>Country App</h3>
+                <h4 className='mt-5'>HTML Tailwind React API</h4>
               </div>
               <div className='text-white text-lg flex flex-row gap-8 mt-5 md:hidden'>
                 <p className='mb-3 border-b-[#4EE1A0] border-b-[3px]'>VIEW PROJECT</p>
                 <p className='mb-3 border-b-[#4EE1A0] border-b-[3px]'>VIEW CODE</p>
               </div>
             </div>
-            <div>
-              <div className='relative w-full h-[400px]'>
-                <div className='w-full h-[400px]'>
-                  <img src={rest} className='w-full h-[400px] object-cover' />
-                </div>
-                <div className='hidden md:absolute md:text-3xl md:text-white md:bg-[#000000] md:w-full md:h-[400px] md:top-0 md:left-0 md:flex md:flex-col md:justify-center md:items-center md:opacity-[0] md:hover:opacity-[.8] hover:cursor-pointer duration-500'>
-                  <p className=' border-b-[#4EE1A0] border-b-[3px] mb-5 text-[1rem] hover:text-[#4EE1A0]'>VIEW PROJECT</p>
-                  <p className='border-b-[#4EE1A0] border-b-[3px] text-[1rem] hover:text-[#4EE1A0]'>VIEW CODE</p>
-                </div>
-                <div className='text-white'>
-                  <h3 className='mt-5 text-2xl'>DESIGN WEBSITE</h3>
-                  <h4 className='mt-5'>HTML CSS</h4>
-                </div>
-                <div className='text-white text-lg flex flex-row gap-8 mt-5 md:hidden'>
-                  <p className='mb-3 border-b-[#4EE1A0] border-b-[3px]'><a href='https://countries-api-app.pages.dev/' target='_blank' rel='noreferrar'>VIEW PROJECT</a></p>
-                  <p className='mb-3 border-b-[#4EE1A0] border-b-[3px]'>VIEW CODE</p>
-                </div>
+            <div className='relative w-full'>
+              <div className='w-full h-[18rem] sm:h-[25rem]'>
+                <img src={timer} className='h-[25rem] w-full object-scale-down' />
+              </div>
+              <div className='hidden md:absolute md:text-3xl md:text-white md:bg-[#000000] md:w-full md:h-[25rem] md:top-0 md:left-0 md:flex md:flex-col md:justify-center md:items-center md:opacity-[0] md:hover:opacity-[.8] hover:cursor-pointer duration-500'>
+                <p className=' border-b-[#4EE1A0] border-b-[3px] mb-5 text-[1rem] hover:text-[#4EE1A0]'><a href='https://uchenna2023.github.io/Count-down-time/' target='_blank'>VIEW PROJECT</a></p>
+                <p className='border-b-[#4EE1A0] border-b-[3px] text-[1rem] hover:text-[#4EE1A0]'>VIEW CODE</p>
+              </div>
+              <div className='text-white'>
+                <h3 className='mt-5 text-2xl'>Count down app</h3>
+                <h4 className='mt-5'>HTML CSS JavaScript</h4>
+              </div>
+              <div className='text-white text-lg flex flex-row gap-8 mt-5 md:hidden'>
+                <p className='mb-3 border-b-[#4EE1A0] border-b-[3px]'>VIEW PROJECT</p>
+                <p className='mb-3 border-b-[#4EE1A0] border-b-[3px]'>VIEW CODE</p>
+              </div>
+            </div>
+            <div className='relative w-full'>
+              <div className='w-full h-[18rem] sm:h-[25rem]'>
+                <img src={todo} className='h-[25rem] w-full object-scale-down' />
+              </div>
+              <div className='hidden md:absolute md:text-3xl md:text-white md:bg-[#000000] md:w-full md:h-[25rem] md:top-0 md:left-0 md:flex md:flex-col md:justify-center md:items-center md:opacity-[0] md:hover:opacity-[.8] hover:cursor-pointer duration-500'>
+                <p className=' border-b-[#4EE1A0] border-b-[3px] mb-5 text-[1rem] hover:text-[#4EE1A0]'>VIEW PROJECT</p>
+                <p className='border-b-[#4EE1A0] border-b-[3px] text-[1rem] hover:text-[#4EE1A0]'>VIEW CODE</p>
+              </div>
+              <div className='text-white'>
+                <h3 className='mt-5 text-2xl'>To-to App</h3>
+                <h4 className='mt-5'>HTML Tailwind React</h4>
+              </div>
+              <div className='text-white text-lg flex flex-row gap-8 mt-5 md:hidden'>
+                <p className='mb-3 border-b-[#4EE1A0] border-b-[3px]'>VIEW PROJECT</p>
+                <p className='mb-3 border-b-[#4EE1A0] border-b-[3px]'>VIEW CODE</p>
+              </div>
+            </div>
+            <div className='relative w-full'>
+              <div className='w-full h-[18rem] sm:h-[25rem]'>
+                <img src={paybox} className='h-[25rem] w-full object-scale-down' />
+              </div>
+              <div className=' hidden md:absolute md:text-3xl md:text-white md:bg-[#000000] md:w-full md:h-[25rem] md:top-0 md:left-0 md:flex md:flex-col md:justify-center md:items-center md:opacity-[0] md:hover:opacity-[.8] hover:cursor-pointer duration-500'>
+                <p className=' border-b-[#4EE1A0] border-b-[3px] mb-5 text-[1rem] hover:text-[#4EE1A0]'><a href='https://uchenna2023.github.io/pay-box/' target='_blank'>VIEW PROJECT</a></p>
+                <p className='border-b-[#4EE1A0] border-b-[3px] text-[1rem] hover:text-[#4EE1A0]'><a href='https://github.com/uchenna2023/pay-box' target='_blank'>VIEW CODE</a></p>
+              </div>
+              <div className='text-white mt-10 sm:mt-0'>
+                <h3 className='mt-5 text-2xl'>Paybox</h3>
+                <h4 className='mt-5'>HTML Tailwind React </h4>
+              </div>
+              <div className='text-white text-lg flex flex-row gap-8 mt-5 md:hidden'>
+                <p className='mb-3 border-b-[#4EE1A0] border-b-[3px]'>VIEW PROJECT</p>
+                <p className='mb-3 border-b-[#4EE1A0] border-b-[3px]'>VIEW CODE</p>
               </div>
             </div>
           </div>
